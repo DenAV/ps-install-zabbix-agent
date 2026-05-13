@@ -17,5 +17,5 @@
 - [x] Consider replacing manual launcher edits with documented examples or parameter files if deployments become repetitive.
 
 ## Verification Gaps
-- [ ] Verify GitHub branch protection after the first `main` branch is pushed; `gh` works locally, but GitHub currently returns `Branch not found`.
+- [x] Verify GitHub branch protection after the first `main` branch is pushed.
 - [x] Verify PowerShell syntax/static checks after installing `pwsh` locally.
