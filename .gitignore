@@ -1,0 +1,38 @@
+# Windows and editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# PowerShell and local runtime artifacts
+*.log
+*.tmp
+*.temp
+*.bak
+*.ps1xml
+*.clixml
+*.pssc
+*.psrc
+
+# Installer payloads and generated packages
+*.msi
+*.msix
+*.zip
+*.nupkg
+
+# Secrets and local environment files
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+*.cer
+*.crt
+*token*
+*secret*
+credentials.*
+kubeconfig*
