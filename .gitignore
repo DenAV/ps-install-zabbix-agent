@@ -27,6 +27,7 @@ testResults.xml
 # Secrets and local environment files
 .env
 .env.*
+Run-Install.config.cmd
 *.key
 *.pem
 *.pfx

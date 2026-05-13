@@ -11,3 +11,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Added repository guidance for future OpenCode sessions.
 - Added GitHub Actions CI for PSScriptAnalyzer, Pester, and gitleaks.
 - Added PSScriptAnalyzer settings, static Pester tests, `.editorconfig`, and `.gitignore`.
+- Added a git-ignored local CMD launcher config flow with `Run-Install.config.example.cmd`.

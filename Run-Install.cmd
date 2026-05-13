@@ -1,6 +1,6 @@
 @echo off
 :: Launches the Zabbix Agent 2 MSI install script (API-based) as Administrator.
-:: Adjust the parameters below before running.
+:: Copy Run-Install.config.example.cmd to Run-Install.config.cmd and edit local values there.
 
 set "ZABBIX_SERVER=your_zabbix_server_address"
 set "ZABBIX_TOKEN=your_api_token"
@@ -16,6 +16,10 @@ set "ZABBIX_PROXY_ADDRESS="
 
 :: Optional: set local/network MSI path to skip download (leave empty to download automatically)
 set "LOCAL_MSI_PATH="
+
+if exist "%~dp0Run-Install.config.cmd" (
+    call "%~dp0Run-Install.config.cmd"
+)
 
 :: Self-elevate if not running as admin
 net session >nul 2>&1

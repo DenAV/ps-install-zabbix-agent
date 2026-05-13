@@ -6,7 +6,7 @@
 - [x] Add CI/CD pipeline for PowerShell validation and secret scanning.
 
 ## Warning
-- [ ] Use Conventional Commits from the initial commit onward.
+- [x] Use Conventional Commits from the initial commit onward.
 - [x] Add `CHANGELOG.md` if this installer will be versioned or released.
 - [x] Add `PSScriptAnalyzerSettings.psd1` and run PSScriptAnalyzer in CI.
 - [x] Add focused Pester tests where behavior can be tested without a real Windows/Zabbix target.
@@ -14,7 +14,7 @@
 
 ## Info
 - [x] Add `.editorconfig` for consistent line endings and indentation across `.ps1`, `.cmd`, and Markdown files.
-- [ ] Consider replacing manual launcher edits with documented examples or parameter files if deployments become repetitive.
+- [x] Consider replacing manual launcher edits with documented examples or parameter files if deployments become repetitive.
 
 ## Verification Gaps
 - [ ] Verify GitHub branch protection after the first `main` branch is pushed; `gh` works locally, but GitHub currently returns `Branch not found`.

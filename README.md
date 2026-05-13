@@ -5,7 +5,8 @@ PowerShell installer for Zabbix Agent 2 on Windows. The script installs or upgra
 ## Files
 
 - `Zabbix-Install-Agent-MSI.ps1` is the main installer.
-- `Run-Install.cmd` is a convenience launcher. Edit its environment-specific values before running it.
+- `Run-Install.cmd` is a convenience launcher that self-elevates before running PowerShell.
+- `Run-Install.config.example.cmd` is a safe template for local launcher settings.
 - `AGENTS.md` contains repo-specific guidance for future OpenCode sessions.
 
 ## Requirements
@@ -23,6 +24,12 @@ PowerShell installer for Zabbix Agent 2 on Windows. The script installs or upgra
 - `-Location`: value written to the Zabbix host tag named `Location`.
 
 Optional parameters include `-ZabbixApiUrl`, `-HostGroupName`, `-TemplateName`, `-LocalMsiPath`, and proxy settings.
+
+## CMD Launcher
+
+For repeated installs, copy `Run-Install.config.example.cmd` to `Run-Install.config.cmd` and edit the local values there. `Run-Install.config.cmd` is ignored by git so API tokens and environment-specific hostnames are not committed.
+
+Then run `Run-Install.cmd` from an elevated or standard CMD session. If it is not already elevated, the wrapper requests administrator privileges and relaunches itself.
 
 ## Direct Server Mode
 

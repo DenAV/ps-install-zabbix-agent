@@ -2,7 +2,8 @@
 
 ## Repo Shape
 - This repo is a Windows Zabbix Agent 2 installer, not a buildable multi-package project.
-- Main logic lives in `Zabbix-Install-Agent-MSI.ps1`; `Run-Install.cmd` is a convenience launcher that users edit with environment-specific values before running.
+- Main logic lives in `Zabbix-Install-Agent-MSI.ps1`; `Run-Install.cmd` is a convenience launcher that can load ignored local values from `Run-Install.config.cmd`.
+- Keep `Run-Install.config.example.cmd` safe for git; real `Run-Install.config.cmd` files may contain hostnames and API tokens and are ignored.
 - `README.md` documents usage; `.github/workflows/ci.yml` runs static PowerShell checks, Pester tests, and gitleaks.
 - Pester tests in `tests/` are static contract checks; they do not execute the installer or contact Zabbix.
 
