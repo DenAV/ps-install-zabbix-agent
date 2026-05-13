@@ -10,7 +10,7 @@ Describe 'Zabbix-Install-Agent-MSI static contract' {
 
     It 'uses strict error handling' {
         $scriptText | Should -Match 'Set-StrictMode -Version Latest'
-        $scriptText | Should -Match "\$ErrorActionPreference = 'Stop'"
+        $scriptText | Should -Match '\$ErrorActionPreference = ''Stop'''
     }
 
     It 'requires the expected user-supplied parameters' {

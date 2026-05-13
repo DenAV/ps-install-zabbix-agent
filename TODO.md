@@ -18,4 +18,4 @@
 
 ## Verification Gaps
 - [ ] Verify GitHub branch protection after the first `main` branch is pushed; `gh` works locally, but GitHub currently returns `Branch not found`.
-- [ ] Verify PowerShell syntax on Windows or after installing `pwsh` locally.
+- [x] Verify PowerShell syntax/static checks after installing `pwsh` locally.
